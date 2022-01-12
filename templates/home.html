@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Machine Learning App with Flask
+		</div>
+		<h2>sentiment analysis tool for amazon kindle books</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+        <form action='/result' method = "POST">
+
+		<p>Enter Your book review </p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="4" cols="50"></textarea>
+		</br>
+
+       <br>
+       <input type="submit" class="button holder">
+      </form>  
+	</div>
+</body>
+</html>
+	
+	
+
